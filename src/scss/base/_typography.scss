@@ -1,3 +1,19 @@
 html {
   font-size: responsive;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.chocolate-section__text {
+    color: $color-darkBrown;
+    font-weight: 700;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  line-height: 3.2rem;
+}

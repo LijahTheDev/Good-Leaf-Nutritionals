@@ -26,6 +26,8 @@
   "dependencies": {
     "hoek": "^5.0.3",
     "jquery": "^3.3.1",
+    "normalize-scss": "^7.0.1",
+    "postcss-responsive-images": "^1.0.3",
     "webpack": "^4.10.2",
     "webpack-cli": "^3.0.1"
   },

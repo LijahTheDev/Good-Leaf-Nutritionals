@@ -1,0 +1,16 @@
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+
+    &__item {
+       text-align: center;
+       font-size: 2rem;
+       color: $color-black; 
+       margin: $x-4;
+    }
+
+    @include medium {
+        flex-direction: row;
+    }
+}

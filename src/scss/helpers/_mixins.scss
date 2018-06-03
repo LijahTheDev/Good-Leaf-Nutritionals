@@ -1,4 +1,29 @@
-@mixin text {
-    color: rgb(238, 12, 12);
-    font-size: 1.5rem;
+@mixin xsmall {
+  @media (max-width: 410px) {
+    @content;
   }
+}
+
+@mixin small {
+    @media (min-width: 479px) {
+      @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: 767px) {
+      @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: 1023px) {
+      @content;
+    }
+}
+
+@mixin xlarge {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}

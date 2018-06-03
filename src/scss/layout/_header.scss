@@ -1,0 +1,84 @@
+.headline {
+    background: url('../img/HeadlineImage_1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem 0;
+
+    @include medium {
+        height: 85vh;
+    }
+
+    &__text {
+        width: 100%;
+        font-size: 3rem;
+        color: $color-white;
+        text-transform: uppercase;
+
+        &--red-big {
+            font-size: 4rem;
+            color: $color-red;
+            text-transform: uppercase;
+            background: linear-gradient(to right, rgba(196, 154, 108, 0.2) 0%, rgba(255, 255, 255, .9), rgba(196, 154, 108, 0.2) 100%);
+            width: 100%;
+            display: block;
+            letter-spacing: 0;
+
+            @include medium {
+                letter-spacing: -4px;
+            }
+        }
+    }
+
+    
+}
+
+.free-shipping-banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 400px;
+        padding: 0 1rem;
+        background: #495E40; 
+
+
+    @include medium {
+        width: 60%;
+    }
+
+    .bottle-img {
+        width: 100%; 
+    }
+
+    &__text {
+        text-align: center;
+        color: $color-white;
+        font-size: 1rem; 
+        line-height: .9;
+        text-shadow: 5px 5px 5px #000;
+
+        @include medium {
+            font-size: 1.4rem;
+            text-shadow: 10px 10px 20px #000;
+        }
+    }
+            .free-text {
+                font-size: 4.4rem;
+                color: #ffd700;
+                animation: flash 1s infinite;
+
+                @include large {
+                    font-size: 8rem;
+                } 
+            }
+            .shipping-text {
+                font-size: 1.5rem;
+
+                @include large {
+                    font-size: 3.7rem;
+                }
+            }
+
+}

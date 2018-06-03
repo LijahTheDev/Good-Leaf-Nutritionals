@@ -1,0 +1,289 @@
+.section__chocolate--text1 {
+    font-size: .9rem;
+    padding: $x-4;
+    text-align: center;
+}
+
+.section__chocolate {
+    background: linear-gradient(to right, #fff 0%, $color-lightBrown1 49%, #fff 100%);
+    padding: $x-4;
+}
+
+.chocolate-section__img {
+   transition: all 1s;
+}
+.chocolate-section__img:hover {
+   transform: scale(1.1) rotate(19deg);
+}
+
+
+.section-list {
+    line-height: 1.9;
+}
+
+.parallax-section {
+    width: 100%;
+    height: 500px;
+    background: url('../img/ParallaxOne_5.jpg') no-repeat center right fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 2px 2px 8px #000;
+
+    @include medium {
+           
+        background: url('../img/ParallaxOne_5.jpg') no-repeat center fixed;
+        background-size: cover;    
+    }
+    
+
+    &__heading--main {
+        width: 100%;
+        font-size: 1.9rem;
+        padding: 1rem 1rem 0 1rem;
+        color: $color-white;
+
+        @include medium {
+            padding: 0 2rem 1rem;
+            max-width: 1100px;
+            font-size: 2.6rem; 
+        }
+    }
+
+    &__heading--sub {
+        font-weight: 700;
+        font-size: 1.4rem;
+        padding: 0 1rem 1rem 1rem;
+        color: $color-white;
+
+        @include medium {
+            padding: 0 2rem 1rem;
+            font-size: 1.8rem; 
+        }
+    }
+}
+
+.doctor-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 330px;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem; 
+    background: #3d1c0f;
+
+    @include xsmall {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+        width: 100%;
+        height: 90vh; 
+    }
+
+    @include large {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 75%;
+        height: 330px;
+    }
+    
+   .columns-right {
+        text-align: left;
+        width: 100%;
+
+        @include large {
+            width: 50%;
+        }
+   }
+
+    &__img {
+        position: relative;
+        top: 20%;
+        width: auto;
+        height: 200px;
+        padding-right: 1rem;
+
+        @include xsmall {
+            top: 0;
+            padding-top: 1rem;
+            width: auto;
+            height: auto;
+        }
+
+        @include large {
+            position: relative;
+            min-height: 400px;
+            top: -30px;
+            left: 0px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        top: 15%;
+        color: $color-white;
+        font-size: 1rem;
+        line-height: 2.1;
+
+        @include xsmall {
+            top: 0;
+            padding: 1rem;
+            line-height: 1.5;
+        }
+
+        @include medium {
+            position: relative;
+            top: 20%;
+            color: $color-white;
+            font-size: .9rem;
+            padding-right: 2rem;
+        }
+        @include large {
+            position: static;
+            color: $color-white;
+            font-size: .9rem;
+            padding-right: 2rem;
+            margin-top: 2rem; 
+        }
+    }
+}
+  
+
+.section-copy {
+    padding: 0 7rem 3rem 7rem;
+
+    @include xsmall {
+        padding: 1rem;
+       
+    }
+
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.8;
+    }
+}
+
+.red-section {
+    background: url(../img/gears_15.jpg) no-repeat center right fixed;
+    background-size: contain;
+    width: 100%;
+    background-color: $color-red-dark;
+    padding: 4rem 7rem 4rem 7rem; 
+    font-size: 1rem;
+    color: white;
+
+    @include xsmall {
+        padding: 1rem;
+    }
+
+    @include medium {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text-wrapper {
+        max-width: 800px;
+        text-shadow: 2px 2px 10px #000;
+
+        @include xsmall {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        font-size: 2rem;
+        color: rgb(255, 217, 0);
+    }
+}
+
+.guarantee-section {
+
+    background: linear-gradient(#ffffff, #ffffff, transparent), url('../img/TransparentArrowbkgd.jpg') no-repeat center center fixed;
+    background-size: cover; 
+
+    &__text-wrapper p:last-child {
+        margin-bottom: 0; 
+        padding-bottom: 3rem;
+    }
+
+    @include xsmall {
+        padding: 1rem;
+    }
+}
+
+.guarantee-section__img-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.guarantee-wrapper {
+    width: 100%;
+    text-align: left;
+    background: $color-white;
+    padding-left: 2rem; 
+    padding-right: 2rem; 
+
+    @include xsmall {
+        width: 100%;
+        margin:0;
+        text-align: center;
+        background: $color-white;
+        padding-left: 0; 
+        padding-right: 0;
+    }
+
+    @include medium {
+        width: 60%;
+        margin: 0 auto;
+        text-align: left;
+        background: $color-white;
+        padding-left: 1rem; 
+        padding-right: 1rem;
+    }
+
+    .delivery {
+        width: 100%;
+        text-align: center;
+    }
+
+    .deliveryman-img {
+        width: 300px;
+        
+
+        @include medium {
+            position: static;
+            float: right;
+        }
+    }
+}
+
+.arrow-section {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    background: rgba(255, 255, 255,.7);
+    padding: 1rem 1rem 15rem;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 75%, 50% 100%, 50% 100%, 0 75%, 0 0);
+    
+    & p:first-child {
+        margin-top: 0;
+        padding-top: 1rem; 
+    }
+    
+    @include medium {
+        width: 60%;
+        margin: 0 auto;
+        padding: 1rem 1rem 15rem;
+    }
+}
+
+.footer-info__text {
+    color: $color-white;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: .6rem;
+    padding: 1rem;
+}
