@@ -1,7 +1,7 @@
 const arr = ['Hello', 'World']
 
-$(".btn").click(function(){
-    console.log('Hello man!')
+$("img").click(function(){
+    console.log($)
 });
 
 arr.forEach(function(e) {
